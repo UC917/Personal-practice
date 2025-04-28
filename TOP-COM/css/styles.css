@@ -1,0 +1,203 @@
+/* 重置默认浏览器样式 */
+* {
+    margin: 0; /* 移除所有元素的默认外边距 */
+    padding: 0; /* 移除所有元素的默认内边距 */
+    box-sizing: border-box; /* 使宽度/高度包含内边距和边框 */
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* 设置整个页面的主要字体 */
+    display: flex; /* 使用弹性盒子进行body布局 */
+    flex-direction: column; /* 垂直堆叠body内容 */
+}
+
+.container {
+    width: 80%; /* 设置容器宽度为父元素的80% */
+    max-width: 1200px; /* 防止容器超过1200像素 */
+    margin: 0 auto; /* 水平居中容器 */
+}
+
+/* 页眉样式 */
+header {
+    background-color: #1F2937; /* 按规定设置页眉的深色背景 */
+    padding: 20px 0; /* 添加页眉的垂直内边距 */
+}
+
+.header-content {
+    display: flex; /* 使用弹性盒子进行页眉内容布局 */
+    justify-content: space-between; /* 将标志和导航推到两端 */
+    align-items: center; /* 垂直居中页眉元素 */
+}
+
+.logo {
+    color: #F9FAF8; /* 为标志文本设置浅色 */
+    font-size: 24px; /* 按规定设置标志的字体大小 */
+    font-weight: bold; /* 使标志文本加粗 */
+}
+
+nav ul {
+    display: flex; /* 使用弹性盒子进行导航列表布局 */
+    list-style: none; /* 移除默认的项目符号 */
+    gap: 24px; /* 在导航项之间添加空间 */
+}
+
+nav a {
+    text-decoration: none; /* 移除链接的下划线 */
+    color: #E5E7EB; /* 为导航链接设置浅灰色 */
+    font-size: 18px; /* 按规定设置导航链接的字体大小 */
+}
+
+/* 英雄部分 */
+.hero {
+    background-color: #1F2937; /* 为英雄部分设置深色背景 */
+    padding: 100px 0; /* 添加较大的垂直内边距 */
+}
+
+.hero-content {
+    display: flex; /* 使用弹性盒子进行英雄内容布局 */
+    justify-content: space-between; /* 分隔英雄文本和图像 */
+    align-items: center; /* 垂直居中英雄元素 */
+    gap: 50px; /* 在文本和图像之间添加空间 */
+}
+
+.hero-text {
+    flex: 1; /* 允许英雄文本增长并占用可用空间 */
+}
+
+.hero-image {
+    flex: 1; /* 允许英雄图像增长并占用可用空间 */
+    display: flex; /* 使用弹性盒子进行图像容器布局 */
+    justify-content: center; /* 水平居中图像 */
+    align-items: center; /* 垂直居中图像 */
+}
+
+.hero h1 {
+    color: #F9FAF8; /* 为主标题设置浅色 */
+    font-size: 48px; /* 按规定设置标题的较大字体大小 */
+    font-weight: 900; /* 为标题设置特粗字重 */
+    margin-bottom: 10px; /* 在标题下方添加空间 */
+}
+
+.hero p {
+    color: #E5E7EB; /* 为副文本设置浅灰色 */
+    font-size: 18px; /* 按规定设置副文本的字体大小 */
+    margin-bottom: 15px; /* 在段落下方添加空间 */
+}
+
+.placeholder {
+    background-color: #6D747D; /* 为占位框设置中灰色 */
+    color: #fff; /* 为占位文本设置白色 */
+    width: 100%; /* 使占位符填充容器宽度 */
+    height: 215px; /* 为占位符设置固定高度 */
+    display: flex; /* 使用弹性盒子进行占位符布局 */
+    justify-content: center; /* 水平居中文本 */
+    align-items: center; /* 垂直居中文本 */
+    text-align: center; /* 居中文本对齐 */
+    padding: 20px; /* 添加内部内边距 */
+}
+
+.sign-up {
+    background-color: #3882F6; /* 按规定为按钮设置蓝色 */
+    color: white; /* 为按钮设置白色文本 */
+    border: none; /* 移除默认按钮边框 */
+    border-radius: 8px; /* 圆角按钮边角 */
+    padding: 10px 30px; /* 为按钮添加内部内边距 */
+    font-size: 16px; /* 设置按钮文本的字体大小 */
+    font-weight: bold; /* 使按钮文本加粗 */
+    cursor: pointer; /* 悬停时改变光标为指针 */
+}
+
+/* 信息部分 */
+.info {
+    padding: 60px 0; /* 为信息部分添加垂直内边距 */
+    text-align: center; /* 水平居中文本 */
+}
+
+.info h2 {
+    color: #1F2937; /* 为信息标题设置深色 */
+    font-size: 36px; /* 按规定设置信息标题的字体大小 */
+    font-weight: 900; /* 为标题设置特粗字重 */
+    margin-bottom: 50px; /* 在标题下方添加较大空间 */
+}
+
+.info-cards {
+    display: flex; /* 使用弹性盒子进行卡片布局 */
+    justify-content: center; /* 水平居中卡片 */
+    gap: 50px; /* 在卡片之间添加空间 */
+}
+
+.card {
+    max-width: 170px; /* 限制卡片宽度 */
+}
+
+.card-image {
+    height: 170px; /* 为卡片图像设置固定高度 */
+    width: 170px; /* 为卡片图像设置固定宽度 */
+    border: 4px solid #3882F6; /* 为图像添加蓝色边框 */
+    border-radius: 8px; /* 圆角图像边角 */
+    margin-bottom: 10px; /* 在图像下方添加空间 */
+}
+
+.card p {
+    color: #1F2937; /* 为卡片文本设置深色 */
+    font-size: 16px; /* 设置卡片文本的字体大小 */
+}
+
+/* 引用部分 */
+.quote {
+    background-color: #E5E7EB; /* 为引用部分设置浅灰色背景 */
+    padding: 100px 0; /* 添加较大的垂直内边距 */
+}
+
+blockquote {
+    color: #1F2937; /* 为引用文本设置深色 */
+    font-size: 36px; /* 按规定设置引用的字体大小 */
+    font-style: italic; /* 使引用文本倾斜 */
+    font-weight: 300; /* 为引用文本设置细字重 */
+    max-width: 800px; /* 限制引用宽度 */
+    margin: 0 auto; /* 水平居中引用 */
+}
+
+cite {
+    display: block; /* 使引用出处成为块元素 */
+    text-align: right; /* 将引用出处右对齐 */
+    font-weight: bold; /* 使引用出处文本加粗 */
+    font-style: normal; /* 移除引用出处的倾斜样式 */
+    font-size: 24px; /* 设置引用出处的字体大小 */
+    margin-top: 10px; /* 在引用出处上方添加空间 */
+}
+
+/* 号召性用语部分 */
+.cta {
+    padding: 100px 0; /* 添加较大的垂直内边距 */
+}
+
+.cta-box {
+    background-color: #3882F6; /* 为CTA框设置蓝色背景 */
+    border-radius: 10px; /* 圆角CTA框边角 */
+    padding: 50px 100px; /* 添加丰富的内部内边距 */
+    display: flex; /* 使用弹性盒子进行CTA内容布局 */
+    justify-content: space-between; /* 分隔文本和按钮 */
+    align-items: center; /* 垂直居中CTA元素 */
+}
+
+.cta-text {
+    color: white; /* 为CTA文本设置白色 */
+}
+
+.cta-text h3 {
+    font-size: 24px; /* 设置CTA标题的字体大小 */
+    margin-bottom: 5px; /* 在标题下方添加空间 */
+}
+
+.cta .sign-up {
+    border: 2px solid white; /* 为CTA按钮添加白色边框 */
+}
+
+/* 页脚 */
+footer {
+    background-color: #1F2937; /* 为页脚设置深色背景 */
+    color: #E5E7EB; /* 为页脚文本设置浅灰色 */
+    padding: 40px 0; /* 为页脚添加垂直内边距 */
+    text-align: center; /* 居中页脚文本 */
+} 
